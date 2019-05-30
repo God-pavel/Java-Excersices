@@ -1,6 +1,4 @@
 package com.company;
-
-
 import java.util.Scanner;
 
 public class ConsoleImport {
@@ -10,7 +8,4 @@ public class ConsoleImport {
         String  str = in.nextLine();
         return str;
     }
-
-
-
 }
