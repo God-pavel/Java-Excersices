@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fa5db25-15dd-4da8-b338-9ba8ba0f6a89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/out/production/MVCHelloWorld/com/company/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/out/production/MVCHelloWorld/com/company/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/out/production/MVCHelloWorld/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/out/production/MVCHelloWorld/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/src/com/company/ConsoleImport.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK1/MVCHelloWorld/src/com/company/ConsoleImport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/View/View.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="60">
+              <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,12 +31,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state relative-caret-position="375">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#180#181#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Model/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="119">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#637#638#0" expanded="true" />
                 <element signature="e#698#699#0" expanded="true" />
@@ -58,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/View/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="195">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -91,10 +89,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Model/Game.java" />
-        <option value="$PROJECT_DIR$/src/com/company/View/View.java" />
         <option value="$PROJECT_DIR$/src/com/company/ConsoleImport.java" />
+        <option value="$PROJECT_DIR$/src/com/company/View/View.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Model/Game.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller/Controller.java" />
       </list>
     </option>
@@ -145,7 +143,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559199510032" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559309922309" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -203,7 +201,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32937366" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
@@ -222,6 +220,34 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Model/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/View/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ConsoleImport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -232,42 +258,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/View/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Model/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
           </folding>
         </state>
       </provider>

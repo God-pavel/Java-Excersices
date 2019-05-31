@@ -9,9 +9,11 @@ import java.util.InputMismatchException;
 public class Controller {
 
     private Game game;
+    private View view;
 
-    public Controller(Game game){
+    public Controller(Game game, View view){
         this.game = game;
+        this.view = view;
     }
 
     private final int getPlayerNum(){
@@ -20,18 +22,18 @@ public class Controller {
         int playerNum = 0;
 
         while (incorrectValue){
-            View.printMessage("Please input number from " + this.game.getminNumber() + " to " + this.game.getMaxNumber());
+            this.view.printMessage(View.NUMBER_FROM + this.game.getminNumber() + View.TO + this.game.getMaxNumber());
             try {
                 playerNum = ConsoleImport.insertNumber();
             } catch (InputMismatchException e) {
-                View.printMessage("Was entered not int value");
+                this.view.printMessage(View.NOT_INT_VAL);
                 continue;
             }
-            if ( playerNum < this.game.getMaxNumber() + 1 && playerNum > this.game.getminNumber() - 1){
+            if ( playerNum < this.game.getMaxNumber() && playerNum > this.game.getminNumber() ){
                 incorrectValue = false;
             }
             else {
-                View.printMessage("Your number is out of range");
+                this.view.printMessage(View.OUT_OF_RANGE);
             }
         }
 
@@ -41,25 +43,24 @@ public class Controller {
 
     public final void startGame(){
 
-        View.printMessage("The game was started!");
+        this.view.printMessage(View.GAME_STARTED);
 
         while(this.game.getMaxNumber() != this.game.getminNumber()){
             int playerNum = this.getPlayerNum();
-            View.printMessage("You tried " + playerNum);
+            this.view.printMessage(View.YOU_TRIED + playerNum);
             this.game.comparePlayerNum(playerNum);
             this.game.increaseNumberOfTries();
             this.game.addTry(playerNum);
-            View.printMessage("The previous tries :");
+            this.view.printMessage(View.PREVIOUS_TRIES);
             for (int i = 0; i < this.game.getNumberOfTries(); i++){
-                View.printArrayElem(this.game.getEnteredNumbers()[i]);
+                this.view.printArrayElem(this.game.getEnteredNumbers()[i]);
             }
-            View.printMessage("\n");
+            this.view.printMessage("\n");
         }
 
-        View.printMessage("You won the game!" + "\n" + "Number of tries = " + this.game.getNumberOfTries() + "\n" +
-                "All your tries: ");
+        this.view.printMessage(View.WON_GMAE + this.game.getNumberOfTries() + View.ALL_TRIES);
         for (int i = 0; i < this.game.getNumberOfTries(); i++){
-            View.printArrayElem(this.game.getEnteredNumbers()[i]);
+            this.view.printArrayElem(this.game.getEnteredNumbers()[i]);
         }
 
     }

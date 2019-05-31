@@ -21,7 +21,7 @@ public class Game {
 
 
     public Game(){
-        this.gameNumber = (int)(Math.random()*100);
+        this.gameNumber = (int)(Math.random()*99) + 1;
         this.maxNumber = 100;
         this.minNumber = 0;
         this.enteredNumbers = new int[100];
@@ -31,10 +31,10 @@ public class Game {
     public final void comparePlayerNum (int playerNum){
 
         if (playerNum - this.gameNumber > 0){
-            this.maxNumber = playerNum - 1;
+            this.maxNumber = playerNum;
         }
         else if (playerNum - this.gameNumber < 0){
-            this.minNumber = playerNum + 1;
+            this.minNumber = playerNum;
         }
         else {
             this.minNumber = this.maxNumber = playerNum;
