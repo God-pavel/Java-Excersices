@@ -1,8 +1,8 @@
-package com.company.Controller;
+package com.company.controller;
 
 import com.company.ConsoleImport;
-import com.company.Model.Model;
-import com.company.View.View;
+import com.company.model.Model;
+import com.company.view.View;
 
 public class Controller {
 
