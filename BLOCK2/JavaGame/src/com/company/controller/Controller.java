@@ -1,8 +1,8 @@
-package com.company.Controller;
+package com.company.controller;
 
 import com.company.ConsoleImport;
-import com.company.Model.Game;
-import com.company.View.View;
+import com.company.model.Game;
+import com.company.view.View;
 
 import java.util.InputMismatchException;
 

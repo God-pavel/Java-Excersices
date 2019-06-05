@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1719e298-d2cb-41d9-87cc-176ba8875ed8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/Model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/Model/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/View/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/out/production/JavaGame/com/company/View/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/Model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/Model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BLOCK2/JavaGame/src/com/company/View/View.java" afterDir="false" />
-    </list>
+    <list default="true" id="1719e298-d2cb-41d9-87cc-176ba8875ed8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +23,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="240">
               <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/ConsoleImport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-end-line="11" />
+              <caret line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -54,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="60">
               <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding>
                 <element signature="e#125#126#0" expanded="true" />
@@ -68,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/View/View.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -109,6 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,8 +123,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,9 +173,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17044826" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17210847" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -223,7 +212,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="240">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -234,13 +223,13 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/ConsoleImport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-end-line="11" />
+          <caret line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Model/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="60">
           <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding>
             <element signature="e#125#126#0" expanded="true" />
@@ -252,7 +241,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/View/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
