@@ -3,6 +3,7 @@ package com.company.controller;
 import com.company.model.Notebook;
 import com.company.model.Record;
 import com.company.view.View;
+import java.util.Locale;
 
 public class MainController {
 
@@ -11,22 +12,24 @@ public class MainController {
 
 
     private boolean checkFirstName(String name){
-        return name.matches(view.FIRST_NAME_PATTERN_EN) || name.matches(view.FIRST_NAME_PATTERN_UA);
+        return name.matches(view.getUIManager().getString(view.FIRST_NAME_PATTERN));
     }
     private boolean checkLastName(String name){
-        return name.matches(view.LAST_NAME_PATTERN_EN) || name.matches(view.LAST_NAME_PATTERN_UA);
+        return name.matches(view.getUIManager().getString(view.LAST_NAME_PATTERN));
     }
     private boolean checkNickname(String name){
-        return name.matches(view.NICKNAME_PATTERN);
+        return name.matches(view.getUIManager().getString(view.NICKNAME_PATTERN));
     }
+
     private boolean checkEmail(String name){
-        return name.matches(view.EMAIL_PATTERN);
+        return name.matches(view.getUIManager().getString(view.EMAIL_PATTERN));
     }
+
     private String getFirstName(){
         boolean check = false;
         String name = "";
         while (!check){
-            view.printMessage(view.INPUT_FIRST_NAME);
+            view.printMessage(view.getUIManager().getString(view.INPUT_FIRST_NAME));
             name = InputController.inputString();
             check = checkFirstName(name);
         }
@@ -36,7 +39,7 @@ public class MainController {
         boolean check = false;
         String name = "";
         while (!check){
-            view.printMessage(view.INPUT_LAST_NAME);
+            view.printMessage(view.getUIManager().getString(view.INPUT_LAST_NAME));
             name = InputController.inputString();
             check = checkLastName(name);
         }
@@ -46,7 +49,7 @@ public class MainController {
         boolean check = false;
         String name = "";
         while (!check){
-            view.printMessage(view.INPUT_NICKNAME);
+            view.printMessage(view.getUIManager().getString(view.INPUT_NICKNAME));
             name = InputController.inputString();
             check = checkNickname(name);
         }
@@ -56,7 +59,7 @@ public class MainController {
         boolean check = false;
         String name = "";
         while (!check){
-            view.printMessage(view.INPUT_EMAIL);
+            view.printMessage(view.getUIManager().getString(view.INPUT_EMAIL));
             name = InputController.inputString();
             check = checkEmail(name);
         }
@@ -68,13 +71,41 @@ public class MainController {
         this.view = view;
     }
 
+    private void chooseLanguage(){
+        boolean onMenu = true;
+        while (onMenu) {
+            view.printMessage(view.getUIManager().getString(view.MENU_LANGUAGE));
+            String menuNum = InputController.inputString();
+            Locale locale;
+            switch (menuNum){
+                case "1":
+                    locale = Locale.getDefault();
+                    view.getUIManager().changeResource(locale);
+                    onMenu = false;
+                    break;
+                case "2":
+                    locale = new Locale("uk","UA");
+                    view.getUIManager().changeResource(locale);
+                    onMenu = false;
+                    break;
+                case "3":
+                    locale = new Locale("ru","RU");
+                    view.getUIManager().changeResource(locale);
+                    onMenu = false;
+                    break;
+                default:
+                    view.printMessage(view.getUIManager().getString(view.INPUT_NUMBER));
+            }
+        }
+    }
 
 
     public final void startController(){
-        view.printMessage(view.PROGRAM_STARTED);
+        view.printMessage(view.getUIManager().getString(view.PROGRAM_STARTED));
+        chooseLanguage();
         boolean onMenu = true;
         while (onMenu){
-            view.printMessage(view.MENU);
+            view.printMessage(view.getUIManager().getString(view.MENU));
             String menuNum = InputController.inputString();
             switch (menuNum){
                 case "1":
@@ -84,7 +115,7 @@ public class MainController {
                     rec.setNickName(getNickname());
                     rec.setEmail(getEmail());
                     notebook.addRecord(rec);
-                    view.printMessage(view.RECORD_ADDED);
+                    view.printMessage(view.getUIManager().getString(view.RECORD_ADDED));
                     break;
                 case "2":
                     view.printNotebook(this.notebook);
@@ -93,7 +124,7 @@ public class MainController {
                     onMenu = false;
                     break;
                 default:
-                    view.printMessage(view.INPUT_NUMBER);
+                    view.printMessage(view.getUIManager().getString(view.INPUT_NUMBER));
             }
         }
 
