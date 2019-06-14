@@ -1,5 +1,6 @@
 package com.company.controller;
 
+import com.company.model.NotUniqueNickname;
 import com.company.model.Notebook;
 import com.company.model.Record;
 import com.company.view.View;
@@ -114,7 +115,16 @@ public class MainController {
                     rec.setLastName(getLastName());
                     rec.setNickName(getNickname());
                     rec.setEmail(getEmail());
-                    notebook.addRecord(rec);
+                    boolean isNicknameUnique = false;
+                    while(!isNicknameUnique) {
+                        try {
+                            notebook.addRecord(rec);
+                            isNicknameUnique = true;
+                        } catch (NotUniqueNickname e) {
+                            view.printMessage(view.getUIManager().getString(view.NOT_UNIQUE) + e.getLogin());
+                            rec.setNickName(getNickname());
+                        }
+                    }
                     view.printMessage(view.getUIManager().getString(view.RECORD_ADDED));
                     break;
                 case "2":

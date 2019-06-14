@@ -16,7 +16,12 @@ public class Notebook {
     }
 
 
-    public  final void addRecord(Record record){
+    public  final void addRecord (Record record) throws NotUniqueNickname{
+        for(Record rec : records){
+            if(rec.getNickName().equals(record.getNickName())){
+                throw new NotUniqueNickname(record.getNickName());
+            }
+        }
         this.records.add(record);
     }
 }

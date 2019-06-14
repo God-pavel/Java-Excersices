@@ -19,7 +19,7 @@ public class View {
     public final String ADRES_PATTERN = "regexp.adres";
     public final String DATE_PATTERN = "regexp.date";
 
-
+    public final String NOT_UNIQUE = "notUnique";
     public final String PROGRAM_STARTED = "menu.start";
     public final String RECORD_ADDED = "record.added";
     public final String INPUT_NUMBER = "input.number";
@@ -55,5 +55,6 @@ public class View {
                 printRecord(rec);
             }
         }
+        System.out.println();
     }
 }
